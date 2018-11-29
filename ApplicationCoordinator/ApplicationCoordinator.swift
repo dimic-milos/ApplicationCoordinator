@@ -23,19 +23,24 @@ class ApplicationCoordinator: NavigationCoordinator {
     override func start() {
         switch sessionManager.loggedInState {
         case .loggedIn(let user):
-            openMainFlow(withUser: user)
+            openAuthenticatedFlow(withUser: user)
         case .notLoggedIn:
-            openLoginFlow()
+            openAuthentificationFlow()
         }
     }
     
-    private func openMainFlow(withUser user: User) {
+    private func openAuthenticatedFlow(withUser user: User) {
         window.set(rootViewController: rootViewController)
-        let mainAppcoordinator = MainAppCoordinator(rootViewController: rootViewController, loggedInUser: user)
-        add(childCoordinator: mainAppcoordinator)
-        mainAppcoordinator.start()
+        let mainAppCoordinator = MainAppCoordinator(rootViewController: rootViewController, loggedInUser: user)
+        add(childCoordinator: mainAppCoordinator)
+        mainAppCoordinator.start()
     }
     
-    private func openLoginFlow() {}
+    private func openAuthentificationFlow() {
+        window.set(rootViewController: rootViewController)
+        let authentificationCoordinator = AuthenticationCoordinator(rootViewController: rootViewController)
+        add(childCoordinator: authentificationCoordinator)
+        authentificationCoordinator.start()
+    }
     
 }

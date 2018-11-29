@@ -11,7 +11,8 @@ import UIKit
 class SessionManager {
     
     var loggedInState: LoggedInState {
-        return LoggedInState.loggedIn(user: User(id: -1))
+//        return LoggedInState.loggedIn(user: User(id: -1))
+        return LoggedInState.notLoggedIn
     }
     
 }

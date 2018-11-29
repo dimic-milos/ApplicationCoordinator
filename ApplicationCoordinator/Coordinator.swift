@@ -10,17 +10,24 @@ import UIKit
 
 class Coordinator<T: UIViewController>: UIResponder, Coordinating {
     
+    // MARK: Properties
+    
     let rootViewController: T
     var childCoordinators: [String : Coordinating] = [:]
-    weak var parent: Coordinating?
-    
-    var identifier: String {
-        return String(describing: type(of: self))
-    }
+
+    // MARK: Init
     
     init(rootViewController: T) {
         self.rootViewController = rootViewController
         super.init()
+    }
+    
+    // MARK: - Coordinating protocol
+    
+    weak var parent: Coordinating?
+    
+    var identifier: String {
+        return String(describing: type(of: self))
     }
     
     func start() {}

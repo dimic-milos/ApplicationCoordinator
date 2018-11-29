@@ -10,10 +10,10 @@ import UIKit
 
 protocol Coordinating: class {
     
-    func start()
-    
-    func add(childCoordinator coordinator: Coordinating)
-    var identifier: String { get }
     var parent: Coordinating? { get set }
+    var identifier: String { get }
     
+    func start()
+    func add(childCoordinator coordinator: Coordinating)
+
 }

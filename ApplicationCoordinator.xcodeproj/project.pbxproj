@@ -27,6 +27,7 @@
 		749101E321AD273D008F6545 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 749101E121AD273D008F6545 /* HomeScreenViewController.xib */; };
 		749101E821AD27E2008F6545 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749101E621AD27E2008F6545 /* LogInViewController.swift */; };
 		749101E921AD27E2008F6545 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 749101E721AD27E2008F6545 /* LogInViewController.xib */; };
+		7491021B21AFC5B3008F6545 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7491021A21AFC5B3008F6545 /* AuthenticationCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		749101E121AD273D008F6545 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
 		749101E621AD27E2008F6545 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		749101E721AD27E2008F6545 /* LogInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
+		7491021A21AFC5B3008F6545 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				749101D321AD19BB008F6545 /* SessionManager.swift */,
 				749101D521AD1E2F008F6545 /* MainNavigationController.swift */,
 				749101D721AD1F6E008F6545 /* MainAppCoordinator.swift */,
+				7491021A21AFC5B3008F6545 /* AuthenticationCoordinator.swift */,
 				749101D921AD203A008F6545 /* User.swift */,
 				749101AD21AD1423008F6545 /* ViewController.swift */,
 				749101AF21AD1423008F6545 /* Main.storyboard */,
@@ -271,6 +274,7 @@
 				749101D021AD1506008F6545 /* Coordinator.swift in Sources */,
 				749101E221AD273D008F6545 /* HomeScreenViewController.swift in Sources */,
 				749101CE21AD1480008F6545 /* NavigationCoordinator.swift in Sources */,
+				7491021B21AFC5B3008F6545 /* AuthenticationCoordinator.swift in Sources */,
 				749101D221AD15FA008F6545 /* Coordinating.swift in Sources */,
 				749101CC21AD145F008F6545 /* ApplicationCoordinator.swift in Sources */,
 				749101D821AD1F6E008F6545 /* MainAppCoordinator.swift in Sources */,
