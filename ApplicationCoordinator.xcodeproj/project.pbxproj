@@ -25,9 +25,15 @@
 		749101DE21AD2409008F6545 /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749101DD21AD2409008F6545 /* UIWindow+Extensions.swift */; };
 		749101E221AD273D008F6545 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749101E021AD273D008F6545 /* HomeScreenViewController.swift */; };
 		749101E321AD273D008F6545 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 749101E121AD273D008F6545 /* HomeScreenViewController.xib */; };
-		749101E821AD27E2008F6545 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749101E621AD27E2008F6545 /* LogInViewController.swift */; };
-		749101E921AD27E2008F6545 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 749101E721AD27E2008F6545 /* LogInViewController.xib */; };
+		749101E821AD27E2008F6545 /* LogInMethodSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749101E621AD27E2008F6545 /* LogInMethodSelectionViewController.swift */; };
+		749101E921AD27E2008F6545 /* LogInMethodSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 749101E721AD27E2008F6545 /* LogInMethodSelectionViewController.xib */; };
 		7491021B21AFC5B3008F6545 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7491021A21AFC5B3008F6545 /* AuthenticationCoordinator.swift */; };
+		7491024D21B106BC008F6545 /* SocialNetworkLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7491024B21B106BC008F6545 /* SocialNetworkLoginViewController.swift */; };
+		7491024E21B106BC008F6545 /* SocialNetworkLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7491024C21B106BC008F6545 /* SocialNetworkLoginViewController.xib */; };
+		7491025121B106E1008F6545 /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7491024F21B106E1008F6545 /* EmailLoginViewController.swift */; };
+		7491025221B106E1008F6545 /* EmailLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7491025021B106E1008F6545 /* EmailLoginViewController.xib */; };
+		7491025521B106F4008F6545 /* EmailSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7491025321B106F4008F6545 /* EmailSignUpViewController.swift */; };
+		7491025621B106F4008F6545 /* EmailSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7491025421B106F4008F6545 /* EmailSignUpViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,9 +69,15 @@
 		749101DD21AD2409008F6545 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
 		749101E021AD273D008F6545 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		749101E121AD273D008F6545 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
-		749101E621AD27E2008F6545 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		749101E721AD27E2008F6545 /* LogInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
+		749101E621AD27E2008F6545 /* LogInMethodSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInMethodSelectionViewController.swift; sourceTree = "<group>"; };
+		749101E721AD27E2008F6545 /* LogInMethodSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInMethodSelectionViewController.xib; sourceTree = "<group>"; };
 		7491021A21AFC5B3008F6545 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		7491024B21B106BC008F6545 /* SocialNetworkLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkLoginViewController.swift; sourceTree = "<group>"; };
+		7491024C21B106BC008F6545 /* SocialNetworkLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialNetworkLoginViewController.xib; sourceTree = "<group>"; };
+		7491024F21B106E1008F6545 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
+		7491025021B106E1008F6545 /* EmailLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailLoginViewController.xib; sourceTree = "<group>"; };
+		7491025321B106F4008F6545 /* EmailSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpViewController.swift; sourceTree = "<group>"; };
+		7491025421B106F4008F6545 /* EmailSignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailSignUpViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +153,10 @@
 		749101DF21AD2717008F6545 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				749101E521AD274E008F6545 /* LogInViewController */,
+				7491024821B104EB008F6545 /* SocialNetworkLoginViewController */,
+				7491024921B10600008F6545 /* EmailLoginViewController */,
+				7491024A21B1068A008F6545 /* EmailSignUpViewController */,
+				749101E521AD274E008F6545 /* LogInMethodSelectionViewController */,
 				749101E421AD2742008F6545 /* HomeScreenViewController */,
 			);
 			path = ViewControllers;
@@ -156,13 +171,40 @@
 			path = HomeScreenViewController;
 			sourceTree = "<group>";
 		};
-		749101E521AD274E008F6545 /* LogInViewController */ = {
+		749101E521AD274E008F6545 /* LogInMethodSelectionViewController */ = {
 			isa = PBXGroup;
 			children = (
-				749101E621AD27E2008F6545 /* LogInViewController.swift */,
-				749101E721AD27E2008F6545 /* LogInViewController.xib */,
+				749101E621AD27E2008F6545 /* LogInMethodSelectionViewController.swift */,
+				749101E721AD27E2008F6545 /* LogInMethodSelectionViewController.xib */,
 			);
-			path = LogInViewController;
+			path = LogInMethodSelectionViewController;
+			sourceTree = "<group>";
+		};
+		7491024821B104EB008F6545 /* SocialNetworkLoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7491024B21B106BC008F6545 /* SocialNetworkLoginViewController.swift */,
+				7491024C21B106BC008F6545 /* SocialNetworkLoginViewController.xib */,
+			);
+			path = SocialNetworkLoginViewController;
+			sourceTree = "<group>";
+		};
+		7491024921B10600008F6545 /* EmailLoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7491024F21B106E1008F6545 /* EmailLoginViewController.swift */,
+				7491025021B106E1008F6545 /* EmailLoginViewController.xib */,
+			);
+			path = EmailLoginViewController;
+			sourceTree = "<group>";
+		};
+		7491024A21B1068A008F6545 /* EmailSignUpViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7491025321B106F4008F6545 /* EmailSignUpViewController.swift */,
+				7491025421B106F4008F6545 /* EmailSignUpViewController.xib */,
+			);
+			path = EmailSignUpViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,11 +288,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7491025221B106E1008F6545 /* EmailLoginViewController.xib in Resources */,
 				749101B621AD1425008F6545 /* LaunchScreen.storyboard in Resources */,
 				749101E321AD273D008F6545 /* HomeScreenViewController.xib in Resources */,
 				749101B321AD1425008F6545 /* Assets.xcassets in Resources */,
 				749101B121AD1423008F6545 /* Main.storyboard in Resources */,
-				749101E921AD27E2008F6545 /* LogInViewController.xib in Resources */,
+				7491024E21B106BC008F6545 /* SocialNetworkLoginViewController.xib in Resources */,
+				7491025621B106F4008F6545 /* EmailSignUpViewController.xib in Resources */,
+				749101E921AD27E2008F6545 /* LogInMethodSelectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,14 +319,17 @@
 				749101D021AD1506008F6545 /* Coordinator.swift in Sources */,
 				749101E221AD273D008F6545 /* HomeScreenViewController.swift in Sources */,
 				749101CE21AD1480008F6545 /* NavigationCoordinator.swift in Sources */,
+				7491025521B106F4008F6545 /* EmailSignUpViewController.swift in Sources */,
 				7491021B21AFC5B3008F6545 /* AuthenticationCoordinator.swift in Sources */,
 				749101D221AD15FA008F6545 /* Coordinating.swift in Sources */,
 				749101CC21AD145F008F6545 /* ApplicationCoordinator.swift in Sources */,
 				749101D821AD1F6E008F6545 /* MainAppCoordinator.swift in Sources */,
 				749101DA21AD203A008F6545 /* User.swift in Sources */,
-				749101E821AD27E2008F6545 /* LogInViewController.swift in Sources */,
+				749101E821AD27E2008F6545 /* LogInMethodSelectionViewController.swift in Sources */,
+				7491025121B106E1008F6545 /* EmailLoginViewController.swift in Sources */,
 				749101DE21AD2409008F6545 /* UIWindow+Extensions.swift in Sources */,
 				749101D421AD19BB008F6545 /* SessionManager.swift in Sources */,
+				7491024D21B106BC008F6545 /* SocialNetworkLoginViewController.swift in Sources */,
 				749101DC21AD2120008F6545 /* LoggedInState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

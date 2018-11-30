@@ -1,15 +1,15 @@
 //
-//  HomeScreenViewController.swift
+//  SocialNetworkLoginViewController.swift
 //  ApplicationCoordinator
 //
-//  Created by Milos Dimic on 11/27/18.
+//  Created by Milos Dimic on 11/30/18.
 //  Copyright © 2018 Milos Dimic. All rights reserved.
 //
 
 import UIKit
 
-class HomeScreenViewController: UIViewController {
-    
+class SocialNetworkLoginViewController: UIViewController {
+   
     init(backgroundColor: UIColor) {
         super.init(nibName: nil, bundle: nil)
         view.backgroundColor = backgroundColor

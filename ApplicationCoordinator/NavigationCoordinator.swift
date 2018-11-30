@@ -16,4 +16,9 @@ class NavigationCoordinator: Coordinator<UINavigationController> {
         viewControllers = [vc]
         rootViewController.viewControllers = [vc]
     }
+    
+    func show(_ vc: UIViewController, sender: Any = self) {
+        viewControllers.append(vc)
+        rootViewController.show(vc, sender: sender)
+    }
 }
