@@ -18,9 +18,6 @@ class MainAppCoordinator: NavigationCoordinator {
     }
     
     override func start() {
-        
-        // MARK: - Diverge here to check if authenticated user is authorized to proceed (current t&c agreed, new app version required, etc...) 
-        
         let homeScreenViewController = HomeScreenViewController(backgroundColor: .green)
         rootOut(with: homeScreenViewController)
     }

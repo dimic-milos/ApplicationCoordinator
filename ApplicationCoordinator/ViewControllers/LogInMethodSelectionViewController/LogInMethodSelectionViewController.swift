@@ -11,7 +11,7 @@ import UIKit
 protocol LoginMethodSelectionViewControllerDelegate: class {
     func didTapSocialLogIn(_ logInMethodSelectionViewController: LogInMethodSelectionViewController)
     func didTapEmailLogIn(_ logInMethodSelectionViewController: LogInMethodSelectionViewController)
-    func didTapSignUp(_ logInMethodSelectionViewController: LogInMethodSelectionViewController)
+    func didTapRegisterNewAccount(_ logInMethodSelectionViewController: LogInMethodSelectionViewController)
 }
 
 class LogInMethodSelectionViewController: UIViewController {
@@ -35,8 +35,8 @@ class LogInMethodSelectionViewController: UIViewController {
         delegate?.didTapEmailLogIn(self)
     }
     
-    @IBAction func buttonSignUpTapped(_ sender: UIButton) {
-        delegate?.didTapSignUp(self)
+    @IBAction func buttonRegisterNewAccountTapped(_ sender: UIButton) {
+        delegate?.didTapRegisterNewAccount(self)
     }
     
 }

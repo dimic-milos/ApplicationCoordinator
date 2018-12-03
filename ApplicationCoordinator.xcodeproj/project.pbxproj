@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7404E22221B5131200254B68 /* BabyAddCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E22121B5131200254B68 /* BabyAddCoordinator.swift */; };
 		749101AC21AD1423008F6545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749101AB21AD1423008F6545 /* AppDelegate.swift */; };
 		749101AE21AD1423008F6545 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749101AD21AD1423008F6545 /* ViewController.swift */; };
 		749101B121AD1423008F6545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 749101AF21AD1423008F6545 /* Main.storyboard */; };
@@ -32,8 +33,8 @@
 		7491024E21B106BC008F6545 /* SocialNetworkLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7491024C21B106BC008F6545 /* SocialNetworkLoginViewController.xib */; };
 		7491025121B106E1008F6545 /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7491024F21B106E1008F6545 /* EmailLoginViewController.swift */; };
 		7491025221B106E1008F6545 /* EmailLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7491025021B106E1008F6545 /* EmailLoginViewController.xib */; };
-		7491025521B106F4008F6545 /* EmailSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7491025321B106F4008F6545 /* EmailSignUpViewController.swift */; };
-		7491025621B106F4008F6545 /* EmailSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7491025421B106F4008F6545 /* EmailSignUpViewController.xib */; };
+		7491025521B106F4008F6545 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7491025321B106F4008F6545 /* RegistrationViewController.swift */; };
+		7491025621B106F4008F6545 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7491025421B106F4008F6545 /* RegistrationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7404E22121B5131200254B68 /* BabyAddCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddCoordinator.swift; sourceTree = "<group>"; };
 		749101A821AD1423008F6545 /* ApplicationCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		749101AB21AD1423008F6545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		749101AD21AD1423008F6545 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,8 +78,8 @@
 		7491024C21B106BC008F6545 /* SocialNetworkLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialNetworkLoginViewController.xib; sourceTree = "<group>"; };
 		7491024F21B106E1008F6545 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
 		7491025021B106E1008F6545 /* EmailLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailLoginViewController.xib; sourceTree = "<group>"; };
-		7491025321B106F4008F6545 /* EmailSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpViewController.swift; sourceTree = "<group>"; };
-		7491025421B106F4008F6545 /* EmailSignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailSignUpViewController.xib; sourceTree = "<group>"; };
+		7491025321B106F4008F6545 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		7491025421B106F4008F6545 /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				749101D521AD1E2F008F6545 /* MainNavigationController.swift */,
 				749101D721AD1F6E008F6545 /* MainAppCoordinator.swift */,
 				7491021A21AFC5B3008F6545 /* AuthenticationCoordinator.swift */,
+				7404E22121B5131200254B68 /* BabyAddCoordinator.swift */,
 				749101D921AD203A008F6545 /* User.swift */,
 				749101AD21AD1423008F6545 /* ViewController.swift */,
 				749101AF21AD1423008F6545 /* Main.storyboard */,
@@ -155,7 +158,7 @@
 			children = (
 				7491024821B104EB008F6545 /* SocialNetworkLoginViewController */,
 				7491024921B10600008F6545 /* EmailLoginViewController */,
-				7491024A21B1068A008F6545 /* EmailSignUpViewController */,
+				7491024A21B1068A008F6545 /* RegistrationViewController */,
 				749101E521AD274E008F6545 /* LogInMethodSelectionViewController */,
 				749101E421AD2742008F6545 /* HomeScreenViewController */,
 			);
@@ -198,13 +201,13 @@
 			path = EmailLoginViewController;
 			sourceTree = "<group>";
 		};
-		7491024A21B1068A008F6545 /* EmailSignUpViewController */ = {
+		7491024A21B1068A008F6545 /* RegistrationViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7491025321B106F4008F6545 /* EmailSignUpViewController.swift */,
-				7491025421B106F4008F6545 /* EmailSignUpViewController.xib */,
+				7491025321B106F4008F6545 /* RegistrationViewController.swift */,
+				7491025421B106F4008F6545 /* RegistrationViewController.xib */,
 			);
-			path = EmailSignUpViewController;
+			path = RegistrationViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +297,7 @@
 				749101B321AD1425008F6545 /* Assets.xcassets in Resources */,
 				749101B121AD1423008F6545 /* Main.storyboard in Resources */,
 				7491024E21B106BC008F6545 /* SocialNetworkLoginViewController.xib in Resources */,
-				7491025621B106F4008F6545 /* EmailSignUpViewController.xib in Resources */,
+				7491025621B106F4008F6545 /* RegistrationViewController.xib in Resources */,
 				749101E921AD27E2008F6545 /* LogInMethodSelectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,11 +322,12 @@
 				749101D021AD1506008F6545 /* Coordinator.swift in Sources */,
 				749101E221AD273D008F6545 /* HomeScreenViewController.swift in Sources */,
 				749101CE21AD1480008F6545 /* NavigationCoordinator.swift in Sources */,
-				7491025521B106F4008F6545 /* EmailSignUpViewController.swift in Sources */,
+				7491025521B106F4008F6545 /* RegistrationViewController.swift in Sources */,
 				7491021B21AFC5B3008F6545 /* AuthenticationCoordinator.swift in Sources */,
 				749101D221AD15FA008F6545 /* Coordinating.swift in Sources */,
 				749101CC21AD145F008F6545 /* ApplicationCoordinator.swift in Sources */,
 				749101D821AD1F6E008F6545 /* MainAppCoordinator.swift in Sources */,
+				7404E22221B5131200254B68 /* BabyAddCoordinator.swift in Sources */,
 				749101DA21AD203A008F6545 /* User.swift in Sources */,
 				749101E821AD27E2008F6545 /* LogInMethodSelectionViewController.swift in Sources */,
 				7491025121B106E1008F6545 /* EmailLoginViewController.swift in Sources */,

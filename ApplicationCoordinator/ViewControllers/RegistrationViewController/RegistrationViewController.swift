@@ -1,5 +1,5 @@
 //
-//  EmailSignUpViewController.swift
+//  RegisterViewController.swift
 //  ApplicationCoordinator
 //
 //  Created by Milos Dimic on 11/30/18.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-protocol EmailSignUpViewControllerDelegate: class {
-    func didTapSignMeUp(_ emailSignUpViewController: EmailSignUpViewController)
+protocol RegisterViewControllerDelegate: class {
+    func didTapSignMeUp(_ registerViewController: RegistrationViewController)
 }
 
-class EmailSignUpViewController: UIViewController {
+class RegistrationViewController: UIViewController {
     
-    weak var delegate: EmailSignUpViewControllerDelegate?
+    weak var delegate: RegisterViewControllerDelegate?
 
     init(backgroundColor: UIColor) {
         super.init(nibName: nil, bundle: nil)

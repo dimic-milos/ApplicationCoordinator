@@ -11,9 +11,9 @@ import UIKit
 class AuthenticationCoordinator: NavigationCoordinator {
         
     override func start() {
-        let loginViewController = LogInMethodSelectionViewController(backgroundColor: .brown)
-        loginViewController.delegate = self
-        rootOut(with: loginViewController)
+        let logInMethodSelectionViewController = LogInMethodSelectionViewController(backgroundColor: .brown)
+        logInMethodSelectionViewController.delegate = self
+        rootOut(with: logInMethodSelectionViewController)
     }
 }
 
@@ -23,14 +23,16 @@ extension AuthenticationCoordinator: LoginMethodSelectionViewControllerDelegate 
     
     func didTapEmailLogIn(_ logInMethodSelectionViewController: LogInMethodSelectionViewController) {}
     
-    func didTapSignUp(_ logInMethodSelectionViewController: LogInMethodSelectionViewController) {
-        let emailSignUpViewController = EmailSignUpViewController(backgroundColor: .yellow)
-        emailSignUpViewController.delegate = self
-        show(emailSignUpViewController)
+    func didTapRegisterNewAccount(_ logInMethodSelectionViewController: LogInMethodSelectionViewController) {
+        let registrationViewController = RegistrationViewController(backgroundColor: .yellow)
+        registrationViewController.delegate = self
+        show(registrationViewController)
     }
 }
 
-extension AuthenticationCoordinator: EmailSignUpViewControllerDelegate {
+extension AuthenticationCoordinator: RegisterViewControllerDelegate {
     
-    func didTapSignMeUp(_ emailSignUpViewController: EmailSignUpViewController) {}
+    func didTapSignMeUp(_ registerViewController: RegistrationViewController) {
+        
+    }
 }
