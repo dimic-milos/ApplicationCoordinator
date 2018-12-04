@@ -40,7 +40,14 @@ class ApplicationCoordinator: NavigationCoordinator {
         window.set(rootViewController: rootViewController)
         let authentificationCoordinator = AuthenticationCoordinator(rootViewController: rootViewController)
         add(childCoordinator: authentificationCoordinator)
+        authentificationCoordinator.delegate = self
         authentificationCoordinator.start()
     }
     
+}
+
+extension ApplicationCoordinator: AuthenticationCoordinatorDelegate {
+    func didFinish(_ authenticationCoordinator: AuthenticationCoordinator, withUser user: User) {
+        remove(childCoordinator: authenticationCoordinator)
+    }
 }

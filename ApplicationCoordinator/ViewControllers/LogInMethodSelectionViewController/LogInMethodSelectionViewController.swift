@@ -12,9 +12,9 @@ class LogInMethodSelectionViewController: UIViewController {
     
     weak var delegate: LoginMethodSelectionViewControllerDelegate?
     
-    init(backgroundColor: UIColor) {
+    init(title: String) {
         super.init(nibName: nil, bundle: nil)
-        view.backgroundColor = backgroundColor
+        self.title = title
     }
     
     required init?(coder aDecoder: NSCoder) {

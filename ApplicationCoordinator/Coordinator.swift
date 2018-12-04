@@ -37,4 +37,9 @@ class Coordinator<T: UIViewController>: UIResponder, Coordinating {
         coordinator.parent = self
     }
     
+    func remove(childCoordinator coordinator: Coordinating) {
+        coordinator.parent = nil
+        childCoordinators.removeValue(forKey: coordinator.identifier)
+    }
+    
 }

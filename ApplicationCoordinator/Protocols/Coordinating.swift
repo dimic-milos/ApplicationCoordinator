@@ -15,5 +15,5 @@ protocol Coordinating: class {
     
     func start()
     func add(childCoordinator coordinator: Coordinating)
-
+    func remove(childCoordinator coordinator: Coordinating)
 }

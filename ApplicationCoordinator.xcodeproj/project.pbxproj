@@ -14,6 +14,7 @@
 		7404E23321B64DB100254B68 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7404E23221B64DB100254B68 /* Default-568h@2x.png */; };
 		7404E23521B64E8F00254B68 /* LoginMethodSelectionViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E23421B64E8F00254B68 /* LoginMethodSelectionViewControllerDelegate.swift */; };
 		7404E23921B650C100254B68 /* BabyAddCoorindatorEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E23821B650C100254B68 /* BabyAddCoorindatorEnums.swift */; };
+		7404E23C21B6559E00254B68 /* AuthenticationCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E23B21B6559E00254B68 /* AuthenticationCoordinatorDelegate.swift */; };
 		749101AC21AD1423008F6545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749101AB21AD1423008F6545 /* AppDelegate.swift */; };
 		749101AE21AD1423008F6545 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749101AD21AD1423008F6545 /* ViewController.swift */; };
 		749101B121AD1423008F6545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 749101AF21AD1423008F6545 /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 		7404E23221B64DB100254B68 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7404E23421B64E8F00254B68 /* LoginMethodSelectionViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMethodSelectionViewControllerDelegate.swift; sourceTree = "<group>"; };
 		7404E23821B650C100254B68 /* BabyAddCoorindatorEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddCoorindatorEnums.swift; sourceTree = "<group>"; };
+		7404E23B21B6559E00254B68 /* AuthenticationCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		749101A821AD1423008F6545 /* ApplicationCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		749101AB21AD1423008F6545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		749101AD21AD1423008F6545 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				749101D121AD15FA008F6545 /* Coordinating.swift */,
 				7404E22E21B64C9F00254B68 /* RegistrationViewControllerDelegate.swift */,
 				7404E23421B64E8F00254B68 /* LoginMethodSelectionViewControllerDelegate.swift */,
+				7404E23B21B6559E00254B68 /* AuthenticationCoordinatorDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				749101AE21AD1423008F6545 /* ViewController.swift in Sources */,
+				7404E23C21B6559E00254B68 /* AuthenticationCoordinatorDelegate.swift in Sources */,
 				749101AC21AD1423008F6545 /* AppDelegate.swift in Sources */,
 				749101D621AD1E2F008F6545 /* MainNavigationController.swift in Sources */,
 				749101D021AD1506008F6545 /* Coordinator.swift in Sources */,

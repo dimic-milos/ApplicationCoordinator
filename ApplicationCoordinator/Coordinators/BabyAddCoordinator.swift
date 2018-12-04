@@ -9,7 +9,7 @@
 import UIKit
 
 
-class BabyAddCoorindator:  NavigationCoordinator {
+class BabyAddCoorindator: NavigationCoordinator {
     
     private let flow: Flow
     

@@ -9,9 +9,11 @@
 import UIKit
 
 class AuthenticationCoordinator: NavigationCoordinator {
-        
+    
+    weak var delegate: AuthenticationCoordinatorDelegate?
+    
     override func start() {
-        let logInMethodSelectionViewController = LogInMethodSelectionViewController(backgroundColor: .brown)
+        let logInMethodSelectionViewController = LogInMethodSelectionViewController(title: String(describing: LogInMethodSelectionViewController.self))
         logInMethodSelectionViewController.delegate = self
         rootOut(with: logInMethodSelectionViewController)
     }
@@ -24,7 +26,7 @@ extension AuthenticationCoordinator: LoginMethodSelectionViewControllerDelegate 
     func didTapEmailLogIn(_ logInMethodSelectionViewController: LogInMethodSelectionViewController) {}
     
     func didTapRegisterNewAccount(_ logInMethodSelectionViewController: LogInMethodSelectionViewController) {
-        let registrationViewController = RegistrationViewController(backgroundColor: .yellow)
+        let registrationViewController = RegistrationViewController(title: String(describing: RegistrationViewController.self))
         registrationViewController.delegate = self
         show(registrationViewController)
     }
@@ -33,6 +35,9 @@ extension AuthenticationCoordinator: LoginMethodSelectionViewControllerDelegate 
 extension AuthenticationCoordinator: RegistrationViewControllerDelegate {
     
     func didTapSignMeUp(_ registerViewController: RegistrationViewController) {
-        
+        let user = User(id: 0)
+        delegate?.didFinish(self, withUser: user)
     }
 }
+
+

@@ -18,7 +18,7 @@ class MainAppCoordinator: NavigationCoordinator {
     }
     
     override func start() {
-        let homeScreenViewController = HomeScreenViewController(backgroundColor: .green)
+        let homeScreenViewController = HomeScreenViewController(title: String(describing: HomeScreenViewController.self))
         rootOut(with: homeScreenViewController)
     }
     
