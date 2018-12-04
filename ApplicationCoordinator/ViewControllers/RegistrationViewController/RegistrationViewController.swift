@@ -8,13 +8,9 @@
 
 import UIKit
 
-protocol RegisterViewControllerDelegate: class {
-    func didTapSignMeUp(_ registerViewController: RegistrationViewController)
-}
-
 class RegistrationViewController: UIViewController {
     
-    weak var delegate: RegisterViewControllerDelegate?
+    weak var delegate: RegistrationViewControllerDelegate?
 
     init(backgroundColor: UIColor) {
         super.init(nibName: nil, bundle: nil)

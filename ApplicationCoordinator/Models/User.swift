@@ -8,7 +8,7 @@
 
 import UIKit
 
-class User {
+struct User {
     
     private let id: Int
     

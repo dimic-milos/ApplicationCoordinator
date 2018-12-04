@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		7404E22221B5131200254B68 /* BabyAddCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E22121B5131200254B68 /* BabyAddCoordinator.swift */; };
+		7404E22621B64A8A00254B68 /* BabyAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E22421B64A8A00254B68 /* BabyAddViewController.swift */; };
+		7404E22721B64A8A00254B68 /* BabyAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7404E22521B64A8A00254B68 /* BabyAddViewController.xib */; };
+		7404E22F21B64C9F00254B68 /* RegistrationViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E22E21B64C9F00254B68 /* RegistrationViewControllerDelegate.swift */; };
+		7404E23321B64DB100254B68 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7404E23221B64DB100254B68 /* Default-568h@2x.png */; };
+		7404E23521B64E8F00254B68 /* LoginMethodSelectionViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E23421B64E8F00254B68 /* LoginMethodSelectionViewControllerDelegate.swift */; };
+		7404E23921B650C100254B68 /* BabyAddCoorindatorEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E23821B650C100254B68 /* BabyAddCoorindatorEnums.swift */; };
 		749101AC21AD1423008F6545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749101AB21AD1423008F6545 /* AppDelegate.swift */; };
 		749101AE21AD1423008F6545 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749101AD21AD1423008F6545 /* ViewController.swift */; };
 		749101B121AD1423008F6545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 749101AF21AD1423008F6545 /* Main.storyboard */; };
@@ -49,6 +55,12 @@
 
 /* Begin PBXFileReference section */
 		7404E22121B5131200254B68 /* BabyAddCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddCoordinator.swift; sourceTree = "<group>"; };
+		7404E22421B64A8A00254B68 /* BabyAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddViewController.swift; sourceTree = "<group>"; };
+		7404E22521B64A8A00254B68 /* BabyAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BabyAddViewController.xib; sourceTree = "<group>"; };
+		7404E22E21B64C9F00254B68 /* RegistrationViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewControllerDelegate.swift; sourceTree = "<group>"; };
+		7404E23221B64DB100254B68 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7404E23421B64E8F00254B68 /* LoginMethodSelectionViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMethodSelectionViewControllerDelegate.swift; sourceTree = "<group>"; };
+		7404E23821B650C100254B68 /* BabyAddCoorindatorEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddCoorindatorEnums.swift; sourceTree = "<group>"; };
 		749101A821AD1423008F6545 /* ApplicationCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		749101AB21AD1423008F6545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		749101AD21AD1423008F6545 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,9 +112,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7404E22321B64A6700254B68 /* BabyAddViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7404E22421B64A8A00254B68 /* BabyAddViewController.swift */,
+				7404E22521B64A8A00254B68 /* BabyAddViewController.xib */,
+			);
+			path = BabyAddViewController;
+			sourceTree = "<group>";
+		};
+		7404E22821B64AED00254B68 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				749101CB21AD145F008F6545 /* ApplicationCoordinator.swift */,
+				749101CD21AD1480008F6545 /* NavigationCoordinator.swift */,
+				749101D721AD1F6E008F6545 /* MainAppCoordinator.swift */,
+				7491021A21AFC5B3008F6545 /* AuthenticationCoordinator.swift */,
+				7404E22121B5131200254B68 /* BabyAddCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		7404E22921B64B1E00254B68 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				749101DD21AD2409008F6545 /* UIWindow+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7404E22A21B64B3F00254B68 /* xCodeInitialFiles */ = {
+			isa = PBXGroup;
+			children = (
+				749101AB21AD1423008F6545 /* AppDelegate.swift */,
+				749101AD21AD1423008F6545 /* ViewController.swift */,
+				749101AF21AD1423008F6545 /* Main.storyboard */,
+				749101B221AD1425008F6545 /* Assets.xcassets */,
+				749101B421AD1425008F6545 /* LaunchScreen.storyboard */,
+				749101B721AD1425008F6545 /* Info.plist */,
+			);
+			path = xCodeInitialFiles;
+			sourceTree = "<group>";
+		};
+		7404E22B21B64BCE00254B68 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				7404E23A21B650E700254B68 /* Global */,
+				7404E23621B6500700254B68 /* Class */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		7404E22C21B64BFC00254B68 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				749101D921AD203A008F6545 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7404E22D21B64C1700254B68 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				749101D121AD15FA008F6545 /* Coordinating.swift */,
+				7404E22E21B64C9F00254B68 /* RegistrationViewControllerDelegate.swift */,
+				7404E23421B64E8F00254B68 /* LoginMethodSelectionViewControllerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7404E23621B6500700254B68 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				7404E23821B650C100254B68 /* BabyAddCoorindatorEnums.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		7404E23A21B650E700254B68 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				749101DB21AD2120008F6545 /* LoggedInState.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
 		7491019F21AD1423008F6545 = {
 			isa = PBXGroup;
 			children = (
+				7404E23221B64DB100254B68 /* Default-568h@2x.png */,
 				749101AA21AD1423008F6545 /* ApplicationCoordinator */,
 				749101BF21AD1426008F6545 /* ApplicationCoordinatorTests */,
 				749101A921AD1423008F6545 /* Products */,
@@ -121,25 +219,16 @@
 		749101AA21AD1423008F6545 /* ApplicationCoordinator */ = {
 			isa = PBXGroup;
 			children = (
+				7404E22A21B64B3F00254B68 /* xCodeInitialFiles */,
+				7404E22921B64B1E00254B68 /* Extensions */,
+				7404E22B21B64BCE00254B68 /* Enums */,
+				7404E22C21B64BFC00254B68 /* Models */,
+				7404E22D21B64C1700254B68 /* Protocols */,
+				7404E22821B64AED00254B68 /* Coordinators */,
 				749101DF21AD2717008F6545 /* ViewControllers */,
-				749101DD21AD2409008F6545 /* UIWindow+Extensions.swift */,
-				749101AB21AD1423008F6545 /* AppDelegate.swift */,
-				749101CB21AD145F008F6545 /* ApplicationCoordinator.swift */,
-				749101CD21AD1480008F6545 /* NavigationCoordinator.swift */,
 				749101CF21AD1506008F6545 /* Coordinator.swift */,
-				749101D121AD15FA008F6545 /* Coordinating.swift */,
-				749101DB21AD2120008F6545 /* LoggedInState.swift */,
 				749101D321AD19BB008F6545 /* SessionManager.swift */,
 				749101D521AD1E2F008F6545 /* MainNavigationController.swift */,
-				749101D721AD1F6E008F6545 /* MainAppCoordinator.swift */,
-				7491021A21AFC5B3008F6545 /* AuthenticationCoordinator.swift */,
-				7404E22121B5131200254B68 /* BabyAddCoordinator.swift */,
-				749101D921AD203A008F6545 /* User.swift */,
-				749101AD21AD1423008F6545 /* ViewController.swift */,
-				749101AF21AD1423008F6545 /* Main.storyboard */,
-				749101B221AD1425008F6545 /* Assets.xcassets */,
-				749101B421AD1425008F6545 /* LaunchScreen.storyboard */,
-				749101B721AD1425008F6545 /* Info.plist */,
 			);
 			path = ApplicationCoordinator;
 			sourceTree = "<group>";
@@ -156,6 +245,7 @@
 		749101DF21AD2717008F6545 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7404E22321B64A6700254B68 /* BabyAddViewController */,
 				7491024821B104EB008F6545 /* SocialNetworkLoginViewController */,
 				7491024921B10600008F6545 /* EmailLoginViewController */,
 				7491024A21B1068A008F6545 /* RegistrationViewController */,
@@ -294,9 +384,11 @@
 				7491025221B106E1008F6545 /* EmailLoginViewController.xib in Resources */,
 				749101B621AD1425008F6545 /* LaunchScreen.storyboard in Resources */,
 				749101E321AD273D008F6545 /* HomeScreenViewController.xib in Resources */,
+				7404E23321B64DB100254B68 /* Default-568h@2x.png in Resources */,
 				749101B321AD1425008F6545 /* Assets.xcassets in Resources */,
 				749101B121AD1423008F6545 /* Main.storyboard in Resources */,
 				7491024E21B106BC008F6545 /* SocialNetworkLoginViewController.xib in Resources */,
+				7404E22721B64A8A00254B68 /* BabyAddViewController.xib in Resources */,
 				7491025621B106F4008F6545 /* RegistrationViewController.xib in Resources */,
 				749101E921AD27E2008F6545 /* LogInMethodSelectionViewController.xib in Resources */,
 			);
@@ -320,6 +412,7 @@
 				749101AC21AD1423008F6545 /* AppDelegate.swift in Sources */,
 				749101D621AD1E2F008F6545 /* MainNavigationController.swift in Sources */,
 				749101D021AD1506008F6545 /* Coordinator.swift in Sources */,
+				7404E23921B650C100254B68 /* BabyAddCoorindatorEnums.swift in Sources */,
 				749101E221AD273D008F6545 /* HomeScreenViewController.swift in Sources */,
 				749101CE21AD1480008F6545 /* NavigationCoordinator.swift in Sources */,
 				7491025521B106F4008F6545 /* RegistrationViewController.swift in Sources */,
@@ -328,6 +421,7 @@
 				749101CC21AD145F008F6545 /* ApplicationCoordinator.swift in Sources */,
 				749101D821AD1F6E008F6545 /* MainAppCoordinator.swift in Sources */,
 				7404E22221B5131200254B68 /* BabyAddCoordinator.swift in Sources */,
+				7404E22621B64A8A00254B68 /* BabyAddViewController.swift in Sources */,
 				749101DA21AD203A008F6545 /* User.swift in Sources */,
 				749101E821AD27E2008F6545 /* LogInMethodSelectionViewController.swift in Sources */,
 				7491025121B106E1008F6545 /* EmailLoginViewController.swift in Sources */,
@@ -335,6 +429,8 @@
 				749101D421AD19BB008F6545 /* SessionManager.swift in Sources */,
 				7491024D21B106BC008F6545 /* SocialNetworkLoginViewController.swift in Sources */,
 				749101DC21AD2120008F6545 /* LoggedInState.swift in Sources */,
+				7404E22F21B64C9F00254B68 /* RegistrationViewControllerDelegate.swift in Sources */,
+				7404E23521B64E8F00254B68 /* LoginMethodSelectionViewControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +594,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K442TLVK77;
-				INFOPLIST_FILE = ApplicationCoordinator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ApplicationCoordinator/xCodeInitialFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -516,7 +612,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K442TLVK77;
-				INFOPLIST_FILE = ApplicationCoordinator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ApplicationCoordinator/xCodeInitialFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

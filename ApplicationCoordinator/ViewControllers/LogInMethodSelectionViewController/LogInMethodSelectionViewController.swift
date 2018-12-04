@@ -8,12 +8,6 @@
 
 import UIKit
 
-protocol LoginMethodSelectionViewControllerDelegate: class {
-    func didTapSocialLogIn(_ logInMethodSelectionViewController: LogInMethodSelectionViewController)
-    func didTapEmailLogIn(_ logInMethodSelectionViewController: LogInMethodSelectionViewController)
-    func didTapRegisterNewAccount(_ logInMethodSelectionViewController: LogInMethodSelectionViewController)
-}
-
 class LogInMethodSelectionViewController: UIViewController {
     
     weak var delegate: LoginMethodSelectionViewControllerDelegate?

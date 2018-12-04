@@ -30,7 +30,7 @@ extension AuthenticationCoordinator: LoginMethodSelectionViewControllerDelegate 
     }
 }
 
-extension AuthenticationCoordinator: RegisterViewControllerDelegate {
+extension AuthenticationCoordinator: RegistrationViewControllerDelegate {
     
     func didTapSignMeUp(_ registerViewController: RegistrationViewController) {
         

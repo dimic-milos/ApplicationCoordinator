@@ -11,11 +11,6 @@ import UIKit
 
 class BabyAddCoorindator:  NavigationCoordinator {
     
-    enum Flow {
-        case babyAddRequired
-        case babyAddOptional
-    }
-    
     private let flow: Flow
     
     init(rootViewController: UINavigationController, flow: Flow) {
