@@ -21,10 +21,10 @@ class BabyAddCoorindator: NavigationCoordinator {
     override func start() {
         switch flow {
             
-        case .babyAddRequired:
-            rootOut(with: UIViewController())
-        case .babyAddOptional:
-            show(UIViewController())
+        case .keepOld:
+            show(BabyAddViewController(title: String(describing: BabyAddViewController.self)))
+        case .startNew:
+            rootOut(with: BabyAddViewController(title: String(describing: BabyAddViewController.self)))
         }
     }
     

@@ -11,7 +11,7 @@ import UIKit
 extension BabyAddCoorindator {
     
     enum Flow {
-        case babyAddRequired
-        case babyAddOptional
+        case keepOld
+        case startNew
     }
 }

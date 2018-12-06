@@ -44,10 +44,18 @@ class ApplicationCoordinator: NavigationCoordinator {
         authentificationCoordinator.start()
     }
     
+    private func openBabyAddFlow() {
+        let babyAddCoordinator = BabyAddCoorindator(rootViewController: rootViewController, flow: .startNew)
+        add(childCoordinator: babyAddCoordinator)
+        babyAddCoordinator.start()
+    }
+    
 }
 
 extension ApplicationCoordinator: AuthenticationCoordinatorDelegate {
+    
     func didFinish(_ authenticationCoordinator: AuthenticationCoordinator, withUser user: User) {
         remove(childCoordinator: authenticationCoordinator)
+        openBabyAddFlow()
     }
 }

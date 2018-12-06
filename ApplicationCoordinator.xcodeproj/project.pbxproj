@@ -11,7 +11,6 @@
 		7404E22621B64A8A00254B68 /* BabyAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E22421B64A8A00254B68 /* BabyAddViewController.swift */; };
 		7404E22721B64A8A00254B68 /* BabyAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7404E22521B64A8A00254B68 /* BabyAddViewController.xib */; };
 		7404E22F21B64C9F00254B68 /* RegistrationViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E22E21B64C9F00254B68 /* RegistrationViewControllerDelegate.swift */; };
-		7404E23321B64DB100254B68 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7404E23221B64DB100254B68 /* Default-568h@2x.png */; };
 		7404E23521B64E8F00254B68 /* LoginMethodSelectionViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E23421B64E8F00254B68 /* LoginMethodSelectionViewControllerDelegate.swift */; };
 		7404E23921B650C100254B68 /* BabyAddCoorindatorEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E23821B650C100254B68 /* BabyAddCoorindatorEnums.swift */; };
 		7404E23C21B6559E00254B68 /* AuthenticationCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E23B21B6559E00254B68 /* AuthenticationCoordinatorDelegate.swift */; };
@@ -59,7 +58,6 @@
 		7404E22421B64A8A00254B68 /* BabyAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddViewController.swift; sourceTree = "<group>"; };
 		7404E22521B64A8A00254B68 /* BabyAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BabyAddViewController.xib; sourceTree = "<group>"; };
 		7404E22E21B64C9F00254B68 /* RegistrationViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewControllerDelegate.swift; sourceTree = "<group>"; };
-		7404E23221B64DB100254B68 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7404E23421B64E8F00254B68 /* LoginMethodSelectionViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMethodSelectionViewControllerDelegate.swift; sourceTree = "<group>"; };
 		7404E23821B650C100254B68 /* BabyAddCoorindatorEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddCoorindatorEnums.swift; sourceTree = "<group>"; };
 		7404E23B21B6559E00254B68 /* AuthenticationCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinatorDelegate.swift; sourceTree = "<group>"; };
@@ -203,7 +201,6 @@
 		7491019F21AD1423008F6545 = {
 			isa = PBXGroup;
 			children = (
-				7404E23221B64DB100254B68 /* Default-568h@2x.png */,
 				749101AA21AD1423008F6545 /* ApplicationCoordinator */,
 				749101BF21AD1426008F6545 /* ApplicationCoordinatorTests */,
 				749101A921AD1423008F6545 /* Products */,
@@ -387,7 +384,6 @@
 				7491025221B106E1008F6545 /* EmailLoginViewController.xib in Resources */,
 				749101B621AD1425008F6545 /* LaunchScreen.storyboard in Resources */,
 				749101E321AD273D008F6545 /* HomeScreenViewController.xib in Resources */,
-				7404E23321B64DB100254B68 /* Default-568h@2x.png in Resources */,
 				749101B321AD1425008F6545 /* Assets.xcassets in Resources */,
 				749101B121AD1423008F6545 /* Main.storyboard in Resources */,
 				7491024E21B106BC008F6545 /* SocialNetworkLoginViewController.xib in Resources */,
