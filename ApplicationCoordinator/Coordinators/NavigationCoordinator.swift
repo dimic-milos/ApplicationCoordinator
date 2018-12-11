@@ -21,4 +21,9 @@ class NavigationCoordinator: Coordinator<UINavigationController> {
         viewControllers.append(vc)
         rootViewController.show(vc, sender: sender)
     }
+    
+    func pop() {
+        viewControllers.removeLast()
+        rootViewController.popViewController(animated: true)
+    }
 }

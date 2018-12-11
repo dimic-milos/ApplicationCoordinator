@@ -21,6 +21,8 @@ class ApplicationCoordinator: NavigationCoordinator {
     }
     
     override func start() {
+        window.set(rootViewController: rootViewController)
+        
         switch sessionManager.loggedInState {
         case .loggedIn(let user):
             openAuthenticatedFlow(withUser: user)
@@ -30,14 +32,13 @@ class ApplicationCoordinator: NavigationCoordinator {
     }
     
     private func openAuthenticatedFlow(withUser user: User) {
-        window.set(rootViewController: rootViewController)
-        let mainAppCoordinator = MainAppCoordinator(rootViewController: rootViewController, loggedInUser: user)
-        add(childCoordinator: mainAppCoordinator)
-        mainAppCoordinator.start()
+        let homeCoordinator = HomeCoordinator(rootViewController: rootViewController, loggedInUser: user)
+        homeCoordinator.delegate = self
+        add(childCoordinator: homeCoordinator)
+        homeCoordinator.start()
     }
     
     private func openAuthentificationFlow() {
-        window.set(rootViewController: rootViewController)
         let authentificationCoordinator = AuthenticationCoordinator(rootViewController: rootViewController)
         add(childCoordinator: authentificationCoordinator)
         authentificationCoordinator.delegate = self
@@ -52,10 +53,16 @@ class ApplicationCoordinator: NavigationCoordinator {
     
 }
 
+// MARK: - AuthenticationCoordinatorDelegate
+
 extension ApplicationCoordinator: AuthenticationCoordinatorDelegate {
     
     func didFinish(_ authenticationCoordinator: AuthenticationCoordinator, withUser user: User) {
         remove(childCoordinator: authenticationCoordinator)
         openBabyAddFlow()
     }
+}
+
+extension ApplicationCoordinator: HomeCoordinatorDelegate {
+    func didFinish(_ homeCoordinator: HomeCoordinator) {}
 }

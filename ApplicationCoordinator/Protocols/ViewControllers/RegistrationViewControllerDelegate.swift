@@ -9,5 +9,5 @@
 import UIKit
 
 protocol RegistrationViewControllerDelegate: class {
-    func didTapSignMeUp(_ registerViewController: RegistrationViewController)
+    func didTapSignMeUp(_ registrationViewController: RegistrationViewController)
 }

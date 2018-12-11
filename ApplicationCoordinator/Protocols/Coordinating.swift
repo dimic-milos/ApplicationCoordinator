@@ -14,6 +14,7 @@ protocol Coordinating: class {
     var identifier: String { get }
     
     func start()
+    func finish()
     func add(childCoordinator coordinator: Coordinating)
     func remove(childCoordinator coordinator: Coordinating)
 }

@@ -10,6 +10,8 @@ import UIKit
 
 class HomeScreenViewController: UIViewController {
     
+    weak var delegate: HomeScreenViewControllerDelegate?
+    
     init(title: String) {
         super.init(nibName: nil, bundle: nil)
         self.title = title
@@ -18,4 +20,9 @@ class HomeScreenViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    @IBAction func buttonAddBabyTapped(_ sender: UIButton) {
+        delegate?.didTapAddBaby(self)
+    }
+    
 }

@@ -31,6 +31,7 @@ class Coordinator<T: UIViewController>: UIResponder, Coordinating {
     }
     
     func start() {}
+    func finish() {}
     
     func add(childCoordinator coordinator: Coordinating) {
         childCoordinators[coordinator.identifier] = coordinator
