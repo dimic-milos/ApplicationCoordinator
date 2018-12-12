@@ -11,5 +11,5 @@ import UIKit
 protocol BabyAddViewControllerDelegate: class {
     func didTapSkip(_ babyAddViewController: BabyAddViewController)
     func didTapBack(_ babyAddViewController: BabyAddViewController)
-    func didAddBaby(_ babyAddViewController: BabyAddViewController, baby: Baby)
+    func didTapAddBaby(_ babyAddViewController: BabyAddViewController, baby: Baby)
 }

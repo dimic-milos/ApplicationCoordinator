@@ -9,10 +9,5 @@
 import UIKit
 
 struct User {
-    
-    private let id: Int
-    
-    init(id: Int) {
-        self.id = id
-    }
+    static let shared = User()
 }

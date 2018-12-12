@@ -31,16 +31,26 @@ class HomeCoordinator: NavigationCoordinator {
     // MARK: - Private methods
     
     func startAddBabyFlow() {
-        let babyAddCoordinator = BabyAddCoorindator(rootViewController: rootViewController, flow: .keepExisting)
+        let babyAddCoordinator = BabyAddCoordinator(rootViewController: rootViewController, flow: .keepExisting)
+        babyAddCoordinator.delegate = self
         add(childCoordinator: babyAddCoordinator)
         babyAddCoordinator.start()
     }
 }
 
+// MARK: - HomeScreenViewControllerDelegate
+
 extension HomeCoordinator: HomeScreenViewControllerDelegate {
     func didTapAddBaby(_ homeScreenViewController: HomeScreenViewController) {
         startAddBabyFlow()
     }
-    
-    
+}
+
+
+// MARK: - BabyAddCoordinatorDelegate
+
+extension HomeCoordinator: BabyAddCoordinatorDelegate {
+    func didFinish(_ babyAddCoordinator: BabyAddCoordinator) {
+        remove(childCoordinator: babyAddCoordinator)
+    }
 }

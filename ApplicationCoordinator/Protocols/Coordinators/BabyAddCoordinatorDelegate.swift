@@ -1,5 +1,5 @@
 //
-//  BabyAddCoorindatorDelegate.swift
+//  BabyAddCoordinatorDelegate.swift
 //  ApplicationCoordinator
 //
 //  Created by Milos on 12/11/18.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-protocol BabyAddCoorindatorDelegate: class {
-    func didFinish(_ babyAddCoorindator: BabyAddCoorindator)
+protocol BabyAddCoordinatorDelegate: class {
+    func didFinish(_ babyAddCoordinator: BabyAddCoordinator)
 }

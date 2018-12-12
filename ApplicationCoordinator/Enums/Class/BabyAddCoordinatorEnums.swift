@@ -1,5 +1,5 @@
 //
-//  BabyAddCoorindatorEnums.swift
+//  BabyAddCoordinatorEnums.swift
 //  ApplicationCoordinator
 //
 //  Created by Milos Dimic on 12/4/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension BabyAddCoorindator {
+extension BabyAddCoordinator {
     
     enum Flow {
         case keepExisting

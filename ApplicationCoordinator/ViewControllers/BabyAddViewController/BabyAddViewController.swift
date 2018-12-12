@@ -49,11 +49,11 @@ class BabyAddViewController: UIViewController {
     // MARK: - Interface Actions
     
     @IBAction func buttonBabyBornTapped(_ sender: Any) {
-        delegate?.didAddBaby(self, baby: Baby())
+        delegate?.didTapAddBaby(self, baby: Baby())
     }
     
     @IBAction func buttonExpectingTapped(_ sender: Any) {
-        delegate?.didAddBaby(self, baby: Baby())
+        delegate?.didTapAddBaby(self, baby: Baby())
     }
     
     @objc private func buttonBackTapped() {

@@ -36,7 +36,7 @@ class LoginStateSelectionViewController: UIViewController {
         case 0:
             delegate?.didFinish(self, loggedInState: .notLoggedIn)
         case 1:
-            delegate?.didFinish(self, loggedInState: .loggedIn(user: User(id: 0)))
+            delegate?.didFinish(self, loggedInState: .loggedIn(user: User.shared))
         default:
             break
         }

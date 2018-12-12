@@ -10,7 +10,7 @@
 		074AFD4F21BF8BC900C0F05A /* BabyAddViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AFD4E21BF8BC900C0F05A /* BabyAddViewControllerDelegate.swift */; };
 		074AFD5121BF8D0600C0F05A /* Baby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AFD5021BF8D0600C0F05A /* Baby.swift */; };
 		074AFD5321BF918400C0F05A /* BabyAddViewControllerEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AFD5221BF918400C0F05A /* BabyAddViewControllerEnums.swift */; };
-		074AFD5521BF954600C0F05A /* BabyAddCoorindatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AFD5421BF954600C0F05A /* BabyAddCoorindatorDelegate.swift */; };
+		074AFD5521BF954600C0F05A /* BabyAddCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AFD5421BF954600C0F05A /* BabyAddCoordinatorDelegate.swift */; };
 		074AFD5921BF9D6E00C0F05A /* HomeCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AFD5821BF9D6E00C0F05A /* HomeCoordinatorDelegate.swift */; };
 		074AFD5B21BF9F1800C0F05A /* HomeScreenViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AFD5A21BF9F1800C0F05A /* HomeScreenViewControllerDelegate.swift */; };
 		074AFD5D21C0D5DB00C0F05A /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AFD5C21C0D5DB00C0F05A /* LoginCoordinator.swift */; };
@@ -23,7 +23,7 @@
 		7404E22721B64A8A00254B68 /* BabyAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7404E22521B64A8A00254B68 /* BabyAddViewController.xib */; };
 		7404E22F21B64C9F00254B68 /* RegistrationViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E22E21B64C9F00254B68 /* RegistrationViewControllerDelegate.swift */; };
 		7404E23521B64E8F00254B68 /* LoginMethodSelectionViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E23421B64E8F00254B68 /* LoginMethodSelectionViewControllerDelegate.swift */; };
-		7404E23921B650C100254B68 /* BabyAddCoorindatorEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E23821B650C100254B68 /* BabyAddCoorindatorEnums.swift */; };
+		7404E23921B650C100254B68 /* BabyAddCoordinatorEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E23821B650C100254B68 /* BabyAddCoordinatorEnums.swift */; };
 		7404E23C21B6559E00254B68 /* AuthenticationCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E23B21B6559E00254B68 /* AuthenticationCoordinatorDelegate.swift */; };
 		749101AC21AD1423008F6545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749101AB21AD1423008F6545 /* AppDelegate.swift */; };
 		749101AE21AD1423008F6545 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749101AD21AD1423008F6545 /* ViewController.swift */; };
@@ -67,7 +67,7 @@
 		074AFD4E21BF8BC900C0F05A /* BabyAddViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddViewControllerDelegate.swift; sourceTree = "<group>"; };
 		074AFD5021BF8D0600C0F05A /* Baby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baby.swift; sourceTree = "<group>"; };
 		074AFD5221BF918400C0F05A /* BabyAddViewControllerEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddViewControllerEnums.swift; sourceTree = "<group>"; };
-		074AFD5421BF954600C0F05A /* BabyAddCoorindatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddCoorindatorDelegate.swift; sourceTree = "<group>"; };
+		074AFD5421BF954600C0F05A /* BabyAddCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		074AFD5821BF9D6E00C0F05A /* HomeCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		074AFD5A21BF9F1800C0F05A /* HomeScreenViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewControllerDelegate.swift; sourceTree = "<group>"; };
 		074AFD5C21C0D5DB00C0F05A /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		7404E22521B64A8A00254B68 /* BabyAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BabyAddViewController.xib; sourceTree = "<group>"; };
 		7404E22E21B64C9F00254B68 /* RegistrationViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewControllerDelegate.swift; sourceTree = "<group>"; };
 		7404E23421B64E8F00254B68 /* LoginMethodSelectionViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMethodSelectionViewControllerDelegate.swift; sourceTree = "<group>"; };
-		7404E23821B650C100254B68 /* BabyAddCoorindatorEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddCoorindatorEnums.swift; sourceTree = "<group>"; };
+		7404E23821B650C100254B68 /* BabyAddCoordinatorEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddCoordinatorEnums.swift; sourceTree = "<group>"; };
 		7404E23B21B6559E00254B68 /* AuthenticationCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		749101A821AD1423008F6545 /* ApplicationCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		749101AB21AD1423008F6545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				7404E23B21B6559E00254B68 /* AuthenticationCoordinatorDelegate.swift */,
-				074AFD5421BF954600C0F05A /* BabyAddCoorindatorDelegate.swift */,
+				074AFD5421BF954600C0F05A /* BabyAddCoordinatorDelegate.swift */,
 				074AFD5821BF9D6E00C0F05A /* HomeCoordinatorDelegate.swift */,
 				074AFD6521C0DC1700C0F05A /* LoginCoordinatorDelegate.swift */,
 			);
@@ -238,7 +238,7 @@
 		7404E23621B6500700254B68 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				7404E23821B650C100254B68 /* BabyAddCoorindatorEnums.swift */,
+				7404E23821B650C100254B68 /* BabyAddCoordinatorEnums.swift */,
 				074AFD5221BF918400C0F05A /* BabyAddViewControllerEnums.swift */,
 			);
 			path = Class;
@@ -468,7 +468,7 @@
 				074AFD6421C0D9C800C0F05A /* LoginStateSelectionViewControllerDelegate.swift in Sources */,
 				749101D621AD1E2F008F6545 /* MainNavigationController.swift in Sources */,
 				749101D021AD1506008F6545 /* Coordinator.swift in Sources */,
-				7404E23921B650C100254B68 /* BabyAddCoorindatorEnums.swift in Sources */,
+				7404E23921B650C100254B68 /* BabyAddCoordinatorEnums.swift in Sources */,
 				749101E221AD273D008F6545 /* HomeScreenViewController.swift in Sources */,
 				749101CE21AD1480008F6545 /* NavigationCoordinator.swift in Sources */,
 				074AFD5921BF9D6E00C0F05A /* HomeCoordinatorDelegate.swift in Sources */,
@@ -492,7 +492,7 @@
 				749101DC21AD2120008F6545 /* LoggedInState.swift in Sources */,
 				7404E22F21B64C9F00254B68 /* RegistrationViewControllerDelegate.swift in Sources */,
 				074AFD5321BF918400C0F05A /* BabyAddViewControllerEnums.swift in Sources */,
-				074AFD5521BF954600C0F05A /* BabyAddCoorindatorDelegate.swift in Sources */,
+				074AFD5521BF954600C0F05A /* BabyAddCoordinatorDelegate.swift in Sources */,
 				074AFD5B21BF9F1800C0F05A /* HomeScreenViewControllerDelegate.swift in Sources */,
 				7404E23521B64E8F00254B68 /* LoginMethodSelectionViewControllerDelegate.swift in Sources */,
 			);

@@ -46,7 +46,8 @@ class ApplicationCoordinator: NavigationCoordinator {
     }
     
     private func openBabyAddFlow() {
-        let babyAddCoordinator = BabyAddCoorindator(rootViewController: rootViewController, flow: .startNew)
+        let babyAddCoordinator = BabyAddCoordinator(rootViewController: rootViewController, flow: .startNew)
+        babyAddCoordinator.delegate = self
         add(childCoordinator: babyAddCoordinator)
         babyAddCoordinator.start()
     }
@@ -63,7 +64,7 @@ extension ApplicationCoordinator: AuthenticationCoordinatorDelegate {
     }
 }
 
-// MARK: - ApplicationCoordinator
+// MARK: - HomeCoordinatorDelegate
 
 extension ApplicationCoordinator: HomeCoordinatorDelegate {
     func didFinish(_ homeCoordinator: HomeCoordinator) {}
@@ -81,5 +82,14 @@ extension ApplicationCoordinator: LoginCoordinatorDelegate {
         case .notLoggedIn:
             openAuthentificationFlow()
         }
+    }
+}
+
+// MARK: BabyAddCoordinatorDelegate
+
+extension ApplicationCoordinator: BabyAddCoordinatorDelegate {
+    func didFinish(_ babyAddCoordinator: BabyAddCoordinator) {
+        remove(childCoordinator: babyAddCoordinator)
+        openAuthenticatedFlow(withUser: User.shared)
     }
 }

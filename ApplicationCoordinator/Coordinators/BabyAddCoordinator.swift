@@ -8,10 +8,10 @@
 
 import UIKit
 
-class BabyAddCoorindator: NavigationCoordinator {
+class BabyAddCoordinator: NavigationCoordinator {
     
     private let flow: Flow
-    weak var delegate: BabyAddCoorindatorDelegate?
+    weak var delegate: BabyAddCoordinatorDelegate?
     
     init(rootViewController: UINavigationController, flow: Flow) {
         self.flow = flow
@@ -37,7 +37,7 @@ class BabyAddCoorindator: NavigationCoordinator {
     }
 }
 
-extension BabyAddCoorindator: BabyAddViewControllerDelegate {
+extension BabyAddCoordinator: BabyAddViewControllerDelegate {
     func didTapSkip(_ babyAddViewController: BabyAddViewController) {
         finish()
     }
@@ -47,7 +47,7 @@ extension BabyAddCoorindator: BabyAddViewControllerDelegate {
         finish()
     }
     
-    func didAddBaby(_ babyAddViewController: BabyAddViewController, baby: Baby) {}
+    func didTapAddBaby(_ babyAddViewController: BabyAddViewController, baby: Baby) {}
     
     
 }
