@@ -13,7 +13,6 @@ import UIKit
 class ApplicationCoordinator: NavigationCoordinator {
     
     private let window: UIWindow
-    private let sessionManager = SessionManager()
     
     init(window: UIWindow) {
         self.window = window
@@ -22,13 +21,14 @@ class ApplicationCoordinator: NavigationCoordinator {
     
     override func start() {
         window.set(rootViewController: rootViewController)
-        
-        switch sessionManager.loggedInState {
-        case .loggedIn(let user):
-            openAuthenticatedFlow(withUser: user)
-        case .notLoggedIn:
-            openAuthentificationFlow()
-        }
+        openLoginStateSelectionFlow()
+    }
+    
+    private func openLoginStateSelectionFlow() {
+        let loginCoordinator = LoginCoordinator(rootViewController: rootViewController)
+        loginCoordinator.delegate = self
+        add(childCoordinator: loginCoordinator)
+        loginCoordinator.start()
     }
     
     private func openAuthenticatedFlow(withUser user: User) {
@@ -57,12 +57,28 @@ class ApplicationCoordinator: NavigationCoordinator {
 
 extension ApplicationCoordinator: AuthenticationCoordinatorDelegate {
     
-    func didFinish(_ authenticationCoordinator: AuthenticationCoordinator, withUser user: User) {
+    func didFinish(_ authenticationCoordinator: AuthenticationCoordinator, user: User) {
         remove(childCoordinator: authenticationCoordinator)
         openBabyAddFlow()
     }
 }
 
+// MARK: - ApplicationCoordinator
+
 extension ApplicationCoordinator: HomeCoordinatorDelegate {
     func didFinish(_ homeCoordinator: HomeCoordinator) {}
+}
+
+// MARK: - LoginCoordinatorDelegate
+
+extension ApplicationCoordinator: LoginCoordinatorDelegate {
+    func didFinish(_ loginCoordinator: LoginCoordinator, loggedInState: LoggedInState) {
+        switch loggedInState {
+        
+        case .loggedIn(let user):
+            openAuthenticatedFlow(withUser: user)
+        case .notLoggedIn:
+            openAuthentificationFlow()
+        }
+    }
 }

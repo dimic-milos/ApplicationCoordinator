@@ -9,5 +9,5 @@
 import UIKit
 
 protocol AuthenticationCoordinatorDelegate: class {
-    func didFinish(_ authenticationCoordinator: AuthenticationCoordinator, withUser user: User)
+    func didFinish(_ authenticationCoordinator: AuthenticationCoordinator, user: User)
 }

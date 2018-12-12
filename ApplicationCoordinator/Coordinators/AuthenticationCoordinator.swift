@@ -35,8 +35,7 @@ extension AuthenticationCoordinator: LoginMethodSelectionViewControllerDelegate 
 extension AuthenticationCoordinator: RegistrationViewControllerDelegate {
     
     func didTapSignMeUp(_ registrationViewController: RegistrationViewController) {
-        let user = User(id: 0)
-        delegate?.didFinish(self, withUser: user)
+        delegate?.didFinish(self, user: User(id: 0))
     }
 }
 
