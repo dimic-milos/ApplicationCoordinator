@@ -31,7 +31,7 @@ class HomeCoordinator: NavigationCoordinator {
     // MARK: - Private methods
     
     func startAddBabyFlow() {
-        let babyAddCoordinator = BabyAddCoorindator(rootViewController: rootViewController, flow: .keepOld)
+        let babyAddCoordinator = BabyAddCoorindator(rootViewController: rootViewController, flow: .keepExisting)
         add(childCoordinator: babyAddCoordinator)
         babyAddCoordinator.start()
     }

@@ -73,6 +73,7 @@ extension ApplicationCoordinator: HomeCoordinatorDelegate {
 
 extension ApplicationCoordinator: LoginCoordinatorDelegate {
     func didFinish(_ loginCoordinator: LoginCoordinator, loggedInState: LoggedInState) {
+        remove(childCoordinator: loginCoordinator)
         switch loggedInState {
         
         case .loggedIn(let user):

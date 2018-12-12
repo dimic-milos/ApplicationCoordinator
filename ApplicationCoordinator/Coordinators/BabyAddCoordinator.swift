@@ -21,7 +21,7 @@ class BabyAddCoorindator: NavigationCoordinator {
     override func start() {
         switch flow {
             
-        case .keepOld:
+        case .keepExisting:
             let babyAddViewController = BabyAddViewController(title: String(describing: BabyAddViewController.self), state: .cannotSkipBabyAdd)
             babyAddViewController.delegate = self
             show(babyAddViewController)

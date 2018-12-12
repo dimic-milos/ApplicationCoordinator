@@ -17,6 +17,10 @@ class AuthenticationCoordinator: NavigationCoordinator {
         logInMethodSelectionViewController.delegate = self
         rootOut(with: logInMethodSelectionViewController)
     }
+    
+    override func finish() {
+        delegate?.didFinish(self, user: User(id: 0))
+    }
 }
 
 extension AuthenticationCoordinator: LoginMethodSelectionViewControllerDelegate {
@@ -35,7 +39,7 @@ extension AuthenticationCoordinator: LoginMethodSelectionViewControllerDelegate 
 extension AuthenticationCoordinator: RegistrationViewControllerDelegate {
     
     func didTapSignMeUp(_ registrationViewController: RegistrationViewController) {
-        delegate?.didFinish(self, user: User(id: 0))
+        finish()
     }
 }
 

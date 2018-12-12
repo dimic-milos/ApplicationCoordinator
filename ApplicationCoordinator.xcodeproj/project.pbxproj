@@ -177,8 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				749101CB21AD145F008F6545 /* ApplicationCoordinator.swift */,
-				074AFD5C21C0D5DB00C0F05A /* LoginCoordinator.swift */,
 				749101CD21AD1480008F6545 /* NavigationCoordinator.swift */,
+				074AFD5C21C0D5DB00C0F05A /* LoginCoordinator.swift */,
 				749101D721AD1F6E008F6545 /* HomeCoordinator.swift */,
 				7491021A21AFC5B3008F6545 /* AuthenticationCoordinator.swift */,
 				7404E22121B5131200254B68 /* BabyAddCoordinator.swift */,
