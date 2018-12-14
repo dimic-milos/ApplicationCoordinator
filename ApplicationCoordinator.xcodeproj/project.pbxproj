@@ -18,6 +18,7 @@
 		074AFD6221C0D63800C0F05A /* LoginStateSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074AFD6021C0D63800C0F05A /* LoginStateSelectionViewController.xib */; };
 		074AFD6421C0D9C800C0F05A /* LoginStateSelectionViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AFD6321C0D9C800C0F05A /* LoginStateSelectionViewControllerDelegate.swift */; };
 		074AFD6621C0DC1700C0F05A /* LoginCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AFD6521C0DC1700C0F05A /* LoginCoordinatorDelegate.swift */; };
+		07DB9D1521C384C0001D3404 /* BabyAddViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB9D1421C384C0001D3404 /* BabyAddViewControllerTests.swift */; };
 		7404E22221B5131200254B68 /* BabyAddCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E22121B5131200254B68 /* BabyAddCoordinator.swift */; };
 		7404E22621B64A8A00254B68 /* BabyAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E22421B64A8A00254B68 /* BabyAddViewController.swift */; };
 		7404E22721B64A8A00254B68 /* BabyAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7404E22521B64A8A00254B68 /* BabyAddViewController.xib */; };
@@ -75,6 +76,7 @@
 		074AFD6021C0D63800C0F05A /* LoginStateSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginStateSelectionViewController.xib; sourceTree = "<group>"; };
 		074AFD6321C0D9C800C0F05A /* LoginStateSelectionViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStateSelectionViewControllerDelegate.swift; sourceTree = "<group>"; };
 		074AFD6521C0DC1700C0F05A /* LoginCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		07DB9D1421C384C0001D3404 /* BabyAddViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddViewControllerTests.swift; sourceTree = "<group>"; };
 		7404E22121B5131200254B68 /* BabyAddCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddCoordinator.swift; sourceTree = "<group>"; };
 		7404E22421B64A8A00254B68 /* BabyAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddViewController.swift; sourceTree = "<group>"; };
 		7404E22521B64A8A00254B68 /* BabyAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BabyAddViewController.xib; sourceTree = "<group>"; };
@@ -162,6 +164,14 @@
 				074AFD6021C0D63800C0F05A /* LoginStateSelectionViewController.xib */,
 			);
 			path = LoginStateSelectionViewController;
+			sourceTree = "<group>";
+		};
+		07DB9D1321C3849C001D3404 /* BabyAddViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				07DB9D1421C384C0001D3404 /* BabyAddViewControllerTests.swift */,
+			);
+			name = BabyAddViewControllerTests;
 			sourceTree = "<group>";
 		};
 		7404E22321B64A6700254B68 /* BabyAddViewController */ = {
@@ -289,6 +299,7 @@
 		749101BF21AD1426008F6545 /* ApplicationCoordinatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				07DB9D1321C3849C001D3404 /* BabyAddViewControllerTests */,
 				749101C021AD1426008F6545 /* ApplicationCoordinatorTests.swift */,
 				749101C221AD1426008F6545 /* Info.plist */,
 			);
@@ -502,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07DB9D1521C384C0001D3404 /* BabyAddViewControllerTests.swift in Sources */,
 				749101C121AD1426008F6545 /* ApplicationCoordinatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

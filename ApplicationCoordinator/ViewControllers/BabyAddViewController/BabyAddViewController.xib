@@ -20,18 +20,18 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="whX-uS-NAb">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="whX-uS-NAb">
                     <rect key="frame" x="37.5" y="283.5" width="300" height="100"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uV5-ay-cZR">
-                            <rect key="frame" x="0.0" y="0.0" width="300" height="0.0"/>
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="49.5"/>
                             <state key="normal" title="My Baby Is Born"/>
                             <connections>
                                 <action selector="buttonBabyBornTapped:" destination="-1" eventType="touchUpInside" id="oOV-pr-Pgp"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNu-e5-etm">
-                            <rect key="frame" x="0.0" y="100" width="300" height="0.0"/>
+                            <rect key="frame" x="0.0" y="50.5" width="300" height="49.5"/>
                             <state key="normal" title="I am expecting a baby"/>
                             <connections>
                                 <action selector="buttonExpectingTapped:" destination="-1" eventType="touchUpInside" id="9Ne-lC-J25"/>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BabyAddViewController: UIViewController {
+class BabyAddViewController: UIViewController, BackableSkippable {
 
     // MARK: Properties
     
@@ -40,9 +40,9 @@ class BabyAddViewController: UIViewController {
         switch state {
             
         case .canSkipBabyAdd:
-            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Skip", style: .plain, target: self, action: #selector(buttonSkipTapped))
+            navigationItem.rightBarButtonItem = NavigationItemProvider.getSkipBarButtonItem(target: self)
         case .cannotSkipBabyAdd:
-            navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(buttonBackTapped))
+            navigationItem.leftBarButtonItem = NavigationItemProvider.getBackBarButtonItem(target: self)
         }
     }
     
@@ -56,11 +56,37 @@ class BabyAddViewController: UIViewController {
         delegate?.didTapAddBaby(self, baby: Baby())
     }
     
-    @objc private func buttonBackTapped() {
+    @objc func buttonBackTapped() {
         delegate?.didTapBack(self)
     }
     
     @objc func buttonSkipTapped() {
         delegate?.didTapSkip(self)
     }
+}
+
+    
+struct NavigationItemProvider {
+    
+    static func getSkipBarButtonItem(target: BackableSkippable) -> UIBarButtonItem {
+            return UIBarButtonItem(title: "Skip", style: .plain, target: target, action: Selector.buttonSkipTapped(in: target))
+    }
+    static func getBackBarButtonItem(target: BackableSkippable) -> UIBarButtonItem {
+            return UIBarButtonItem(title: "Back", style: .plain, target: target, action: Selector.buttonBackTapped(in: target))
+    }
+}
+
+extension Selector {
+    
+    static func buttonBackTapped(in object: BackableSkippable) -> Selector {
+        return #selector(object.buttonBackTapped)
+    }
+    static func buttonSkipTapped(in object: BackableSkippable) -> Selector {
+        return #selector(object.buttonSkipTapped)
+    }
+}
+
+@objc protocol BackableSkippable {
+    func buttonBackTapped()
+    func buttonSkipTapped()
 }
