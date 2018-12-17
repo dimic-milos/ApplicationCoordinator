@@ -18,6 +18,12 @@
 		074AFD6221C0D63800C0F05A /* LoginStateSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074AFD6021C0D63800C0F05A /* LoginStateSelectionViewController.xib */; };
 		074AFD6421C0D9C800C0F05A /* LoginStateSelectionViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AFD6321C0D9C800C0F05A /* LoginStateSelectionViewControllerDelegate.swift */; };
 		074AFD6621C0DC1700C0F05A /* LoginCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AFD6521C0DC1700C0F05A /* LoginCoordinatorDelegate.swift */; };
+		07AC1C6E21C77538002FB6B0 /* Selector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AC1C6D21C77538002FB6B0 /* Selector+Extensions.swift */; };
+		07AC1C7021C775A3002FB6B0 /* BackableSkippable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AC1C6F21C775A3002FB6B0 /* BackableSkippable.swift */; };
+		07AC1C7421C777D3002FB6B0 /* NavigationItemHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AC1C7321C777D3002FB6B0 /* NavigationItemHelper.swift */; };
+		07AC1C7821C77888002FB6B0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AC1C7721C77888002FB6B0 /* Constants.swift */; };
+		07AC1C7E21C779EB002FB6B0 /* NavigationItemHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AC1C7D21C779EB002FB6B0 /* NavigationItemHelperTests.swift */; };
+		07AC1C8521C78744002FB6B0 /* BackableSkippableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AC1C8421C78744002FB6B0 /* BackableSkippableTests.swift */; };
 		07DB9D1521C384C0001D3404 /* BabyAddViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB9D1421C384C0001D3404 /* BabyAddViewControllerTests.swift */; };
 		7404E22221B5131200254B68 /* BabyAddCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E22121B5131200254B68 /* BabyAddCoordinator.swift */; };
 		7404E22621B64A8A00254B68 /* BabyAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404E22421B64A8A00254B68 /* BabyAddViewController.swift */; };
@@ -76,6 +82,12 @@
 		074AFD6021C0D63800C0F05A /* LoginStateSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginStateSelectionViewController.xib; sourceTree = "<group>"; };
 		074AFD6321C0D9C800C0F05A /* LoginStateSelectionViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStateSelectionViewControllerDelegate.swift; sourceTree = "<group>"; };
 		074AFD6521C0DC1700C0F05A /* LoginCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		07AC1C6D21C77538002FB6B0 /* Selector+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Selector+Extensions.swift"; sourceTree = "<group>"; };
+		07AC1C6F21C775A3002FB6B0 /* BackableSkippable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackableSkippable.swift; sourceTree = "<group>"; };
+		07AC1C7321C777D3002FB6B0 /* NavigationItemHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItemHelper.swift; sourceTree = "<group>"; };
+		07AC1C7721C77888002FB6B0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		07AC1C7D21C779EB002FB6B0 /* NavigationItemHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItemHelperTests.swift; sourceTree = "<group>"; };
+		07AC1C8421C78744002FB6B0 /* BackableSkippableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackableSkippableTests.swift; sourceTree = "<group>"; };
 		07DB9D1421C384C0001D3404 /* BabyAddViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddViewControllerTests.swift; sourceTree = "<group>"; };
 		7404E22121B5131200254B68 /* BabyAddCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddCoordinator.swift; sourceTree = "<group>"; };
 		7404E22421B64A8A00254B68 /* BabyAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyAddViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +178,78 @@
 			path = LoginStateSelectionViewController;
 			sourceTree = "<group>";
 		};
+		07AC1C7121C775ED002FB6B0 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				07AC1C7721C77888002FB6B0 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		07AC1C7221C777BC002FB6B0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				07AC1C7321C777D3002FB6B0 /* NavigationItemHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		07AC1C7A21C77991002FB6B0 /* ViewControllersTests */ = {
+			isa = PBXGroup;
+			children = (
+				07DB9D1321C3849C001D3404 /* BabyAddViewControllerTests */,
+			);
+			name = ViewControllersTests;
+			sourceTree = "<group>";
+		};
+		07AC1C7B21C779C6002FB6B0 /* HelpersTests */ = {
+			isa = PBXGroup;
+			children = (
+				07AC1C7C21C779D6002FB6B0 /* NavigationItemHelperTests */,
+			);
+			name = HelpersTests;
+			sourceTree = "<group>";
+		};
+		07AC1C7C21C779D6002FB6B0 /* NavigationItemHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				07AC1C7D21C779EB002FB6B0 /* NavigationItemHelperTests.swift */,
+			);
+			name = NavigationItemHelperTests;
+			sourceTree = "<group>";
+		};
+		07AC1C7F21C78573002FB6B0 /* ProtocolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				07AC1C8121C786C2002FB6B0 /* BackableSkippableTests */,
+			);
+			name = ProtocolsTests;
+			sourceTree = "<group>";
+		};
+		07AC1C8021C786B3002FB6B0 /* BackableSkippable */ = {
+			isa = PBXGroup;
+			children = (
+				07AC1C6F21C775A3002FB6B0 /* BackableSkippable.swift */,
+			);
+			path = BackableSkippable;
+			sourceTree = "<group>";
+		};
+		07AC1C8121C786C2002FB6B0 /* BackableSkippableTests */ = {
+			isa = PBXGroup;
+			children = (
+				07AC1C8421C78744002FB6B0 /* BackableSkippableTests.swift */,
+			);
+			name = BackableSkippableTests;
+			sourceTree = "<group>";
+		};
+		07AC1C8621C78822002FB6B0 /* Coordinating */ = {
+			isa = PBXGroup;
+			children = (
+				749101D121AD15FA008F6545 /* Coordinating.swift */,
+			);
+			path = Coordinating;
+			sourceTree = "<group>";
+		};
 		07DB9D1321C3849C001D3404 /* BabyAddViewControllerTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				749101DD21AD2409008F6545 /* UIWindow+Extensions.swift */,
+				07AC1C6D21C77538002FB6B0 /* Selector+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -229,6 +314,8 @@
 		7404E22C21B64BFC00254B68 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				749101CF21AD1506008F6545 /* Coordinator.swift */,
+				749101D521AD1E2F008F6545 /* MainNavigationController.swift */,
 				749101D921AD203A008F6545 /* User.swift */,
 				074AFD5021BF8D0600C0F05A /* Baby.swift */,
 			);
@@ -238,7 +325,8 @@
 		7404E22D21B64C1700254B68 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				749101D121AD15FA008F6545 /* Coordinating.swift */,
+				07AC1C8621C78822002FB6B0 /* Coordinating */,
+				07AC1C8021C786B3002FB6B0 /* BackableSkippable */,
 				074AFD5621BF959200C0F05A /* Coordinators */,
 				074AFD5721BF95BA00C0F05A /* ViewControllers */,
 			);
@@ -283,6 +371,8 @@
 		749101AA21AD1423008F6545 /* ApplicationCoordinator */ = {
 			isa = PBXGroup;
 			children = (
+				07AC1C7121C775ED002FB6B0 /* Constants */,
+				07AC1C7221C777BC002FB6B0 /* Helpers */,
 				7404E22A21B64B3F00254B68 /* xCodeInitialFiles */,
 				7404E22921B64B1E00254B68 /* Extensions */,
 				7404E22B21B64BCE00254B68 /* Enums */,
@@ -290,8 +380,6 @@
 				7404E22D21B64C1700254B68 /* Protocols */,
 				7404E22821B64AED00254B68 /* Coordinators */,
 				749101DF21AD2717008F6545 /* ViewControllers */,
-				749101CF21AD1506008F6545 /* Coordinator.swift */,
-				749101D521AD1E2F008F6545 /* MainNavigationController.swift */,
 			);
 			path = ApplicationCoordinator;
 			sourceTree = "<group>";
@@ -299,7 +387,9 @@
 		749101BF21AD1426008F6545 /* ApplicationCoordinatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				07DB9D1321C3849C001D3404 /* BabyAddViewControllerTests */,
+				07AC1C7F21C78573002FB6B0 /* ProtocolsTests */,
+				07AC1C7B21C779C6002FB6B0 /* HelpersTests */,
+				07AC1C7A21C77991002FB6B0 /* ViewControllersTests */,
 				749101C021AD1426008F6545 /* ApplicationCoordinatorTests.swift */,
 				749101C221AD1426008F6545 /* Info.plist */,
 			);
@@ -475,7 +565,9 @@
 			files = (
 				749101AE21AD1423008F6545 /* ViewController.swift in Sources */,
 				7404E23C21B6559E00254B68 /* AuthenticationCoordinatorDelegate.swift in Sources */,
+				07AC1C6E21C77538002FB6B0 /* Selector+Extensions.swift in Sources */,
 				749101AC21AD1423008F6545 /* AppDelegate.swift in Sources */,
+				07AC1C7421C777D3002FB6B0 /* NavigationItemHelper.swift in Sources */,
 				074AFD6421C0D9C800C0F05A /* LoginStateSelectionViewControllerDelegate.swift in Sources */,
 				749101D621AD1E2F008F6545 /* MainNavigationController.swift in Sources */,
 				749101D021AD1506008F6545 /* Coordinator.swift in Sources */,
@@ -490,6 +582,7 @@
 				749101CC21AD145F008F6545 /* ApplicationCoordinator.swift in Sources */,
 				749101D821AD1F6E008F6545 /* HomeCoordinator.swift in Sources */,
 				7404E22221B5131200254B68 /* BabyAddCoordinator.swift in Sources */,
+				07AC1C7021C775A3002FB6B0 /* BackableSkippable.swift in Sources */,
 				074AFD5D21C0D5DB00C0F05A /* LoginCoordinator.swift in Sources */,
 				7404E22621B64A8A00254B68 /* BabyAddViewController.swift in Sources */,
 				749101DA21AD203A008F6545 /* User.swift in Sources */,
@@ -505,6 +598,7 @@
 				074AFD5321BF918400C0F05A /* BabyAddViewControllerEnums.swift in Sources */,
 				074AFD5521BF954600C0F05A /* BabyAddCoordinatorDelegate.swift in Sources */,
 				074AFD5B21BF9F1800C0F05A /* HomeScreenViewControllerDelegate.swift in Sources */,
+				07AC1C7821C77888002FB6B0 /* Constants.swift in Sources */,
 				7404E23521B64E8F00254B68 /* LoginMethodSelectionViewControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +608,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				07DB9D1521C384C0001D3404 /* BabyAddViewControllerTests.swift in Sources */,
+				07AC1C7E21C779EB002FB6B0 /* NavigationItemHelperTests.swift in Sources */,
+				07AC1C8521C78744002FB6B0 /* BackableSkippableTests.swift in Sources */,
 				749101C121AD1426008F6545 /* ApplicationCoordinatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

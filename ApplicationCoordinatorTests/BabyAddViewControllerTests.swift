@@ -11,17 +11,17 @@ import XCTest
 
 class BabyAddViewControllerTests: XCTestCase {
 
-    func test_ViewDidLoad_WhenCalled_SetsLeftBarButtonItemAsExpected() throws {
-        let sut = BabyAddViewController(title: String(describing: BabyAddViewController.self), state: .cannotSkipBabyAdd)
-        let expected = NavigationItemProvider.getBackBarButtonItem(target: sut)
+    let fakeNavigationItemHelper = FakeNavigationItemHelper()
+    
+    func test_ViewDidLoad_WhenControllerStateIsCannotSkipBabyAdd_CallsNavigationItemHelperMethodGetBackBarButtonItem() {
+        let sut = BabyAddViewController(title: "", state: .cannotSkipBabyAdd, navigationItemHelper: fakeNavigationItemHelper)
         sut.beginAppearanceTransition(true, animated: false)
-        
-        XCTAssertEqual(sut.navigationItem.leftBarButtonItem?.title, expected.title)
-        XCTAssertEqual(sut.navigationItem.leftBarButtonItem?.action, expected.action)
-        XCTAssertEqual(sut.navigationItem.leftBarButtonItem?.style, expected.style)
-        guard let target = sut.navigationItem.leftBarButtonItem?.target as? UIViewController else { XCTFail(); return }
-        guard let expectedViewController = expected.target as? UIViewController else { XCTFail(); return }
-        XCTAssertEqual(target, expectedViewController)
+        XCTAssertTrue(fakeNavigationItemHelper.isGetBackBarButtonItemCalled)
     }
-
+    
+    func test_ViewDidLoad_WhenControllerStateIsCanSkipBabyAdd_CallsNavigationItemHelperMethodGetSkipBarButtonItemMethod() {
+        let sut = BabyAddViewController(title: "", state: .canSkipBabyAdd, navigationItemHelper: fakeNavigationItemHelper)
+        sut.beginAppearanceTransition(true, animated: false)
+        XCTAssertTrue(fakeNavigationItemHelper.isGetSkipBarButtonItemCalled)
+    }
 }

@@ -13,12 +13,14 @@ class BabyAddViewController: UIViewController, BackableSkippable {
     // MARK: Properties
     
     private let state: State
+    private let navigationItemHelper: NavigationItemHelper
     weak var delegate: BabyAddViewControllerDelegate?
     
     // MARK: - Init methods
     
-    init(title: String, state: State) {
+    init(title: String, state: State, navigationItemHelper: NavigationItemHelper = NavigationItemHelper.shared) {
         self.state = state
+        self.navigationItemHelper = navigationItemHelper
         super.init(nibName: nil, bundle: nil)
         self.title = title
     }
@@ -40,9 +42,9 @@ class BabyAddViewController: UIViewController, BackableSkippable {
         switch state {
             
         case .canSkipBabyAdd:
-            navigationItem.rightBarButtonItem = NavigationItemProvider.getSkipBarButtonItem(target: self)
+            navigationItem.rightBarButtonItem = navigationItemHelper.getSkipBarButtonItem(target: self)
         case .cannotSkipBabyAdd:
-            navigationItem.leftBarButtonItem = NavigationItemProvider.getBackBarButtonItem(target: self)
+            navigationItem.leftBarButtonItem = navigationItemHelper.getBackBarButtonItem(target: self)
         }
     }
     
@@ -63,30 +65,4 @@ class BabyAddViewController: UIViewController, BackableSkippable {
     @objc func buttonSkipTapped() {
         delegate?.didTapSkip(self)
     }
-}
-
-    
-struct NavigationItemProvider {
-    
-    static func getSkipBarButtonItem(target: BackableSkippable) -> UIBarButtonItem {
-            return UIBarButtonItem(title: "Skip", style: .plain, target: target, action: Selector.buttonSkipTapped(in: target))
-    }
-    static func getBackBarButtonItem(target: BackableSkippable) -> UIBarButtonItem {
-            return UIBarButtonItem(title: "Back", style: .plain, target: target, action: Selector.buttonBackTapped(in: target))
-    }
-}
-
-extension Selector {
-    
-    static func buttonBackTapped(in object: BackableSkippable) -> Selector {
-        return #selector(object.buttonBackTapped)
-    }
-    static func buttonSkipTapped(in object: BackableSkippable) -> Selector {
-        return #selector(object.buttonSkipTapped)
-    }
-}
-
-@objc protocol BackableSkippable {
-    func buttonBackTapped()
-    func buttonSkipTapped()
 }
