@@ -10,4 +10,5 @@ import UIKit
 
 protocol HomeScreenViewControllerDelegate: class {
     func didTapAddBaby(_ homeScreenViewController: HomeScreenViewController)
+    func didTapLogout(_ homeScreenViewController: HomeScreenViewController)
 }

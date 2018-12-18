@@ -26,4 +26,13 @@ class NavigationCoordinator: Coordinator<UINavigationController> {
         viewControllers.removeLast()
         rootViewController.popViewController(animated: true)
     }
+    
+    func removeAllChildCoordinators() {
+        for k in childCoordinators.keys {
+            if let coordinator = childCoordinators[k] {
+                coordinator.parent = nil
+                childCoordinators.removeValue(forKey: coordinator.identifier)
+            }
+        }
+    }
 }

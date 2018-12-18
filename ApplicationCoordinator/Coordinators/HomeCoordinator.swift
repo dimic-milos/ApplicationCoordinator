@@ -44,6 +44,10 @@ extension HomeCoordinator: HomeScreenViewControllerDelegate {
     func didTapAddBaby(_ homeScreenViewController: HomeScreenViewController) {
         startAddBabyFlow()
     }
+    
+    func didTapLogout(_ homeScreenViewController: HomeScreenViewController) {
+        onLogout()
+    }
 }
 
 

@@ -8,6 +8,4 @@
 
 import UIKit
 
-struct User {
-    static let shared = User()
-}
+struct User {}

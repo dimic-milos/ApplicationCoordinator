@@ -19,7 +19,7 @@ class AuthenticationCoordinator: NavigationCoordinator {
     }
     
     override func finish() {
-        delegate?.didFinish(self, user: User.shared)
+        delegate?.didFinish(self, user: User())
     }
 }
 

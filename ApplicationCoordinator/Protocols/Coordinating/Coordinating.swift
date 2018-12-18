@@ -17,4 +17,6 @@ protocol Coordinating: class {
     func finish()
     func add(childCoordinator coordinator: Coordinating)
     func remove(childCoordinator coordinator: Coordinating)
+    
+    func onLogout()
 }

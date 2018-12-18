@@ -27,11 +27,20 @@
                         <action selector="buttonAddBabyTapped:" destination="-1" eventType="touchUpInside" id="Gg3-ZQ-hkN"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZv-Cf-9QG">
+                    <rect key="frame" x="163.5" y="587" width="48" height="30"/>
+                    <state key="normal" title="Logout"/>
+                    <connections>
+                        <action selector="buttonLogoutTapped:" destination="-1" eventType="touchUpInside" id="QYh-ej-nn6"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="kYE-4g-4kn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ADs-nb-6sC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MZv-Cf-9QG" secondAttribute="bottom" constant="50" id="cEM-ER-pqk"/>
                 <constraint firstItem="kYE-4g-4kn" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="swb-F0-fVG"/>
+                <constraint firstItem="MZv-Cf-9QG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zUH-7E-cIu"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

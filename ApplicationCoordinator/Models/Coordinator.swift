@@ -43,4 +43,7 @@ class Coordinator<T: UIViewController>: UIResponder, Coordinating {
         childCoordinators.removeValue(forKey: coordinator.identifier)
     }
     
+    func onLogout() {
+        parent?.onLogout()
+    }
 }

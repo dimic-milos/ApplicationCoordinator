@@ -12,17 +12,29 @@ import UIKit
 
 class ApplicationCoordinator: NavigationCoordinator {
     
+    // MARK: Properties
+    
     private let window: UIWindow
+    
+    // MARK: Init
     
     init(window: UIWindow) {
         self.window = window
         super.init(rootViewController: MainNavigationController())
     }
     
+    // MARK: - Override methods
+    
     override func start() {
         window.set(rootViewController: rootViewController)
         openLoginStateSelectionFlow()
     }
+    
+    override func onLogout() {
+        logout()
+    }
+    
+    // MARK: - Private methods
     
     private func openLoginStateSelectionFlow() {
         let loginCoordinator = LoginCoordinator(rootViewController: rootViewController)
@@ -50,6 +62,11 @@ class ApplicationCoordinator: NavigationCoordinator {
         babyAddCoordinator.delegate = self
         add(childCoordinator: babyAddCoordinator)
         babyAddCoordinator.start()
+    }
+    
+    private func logout() {
+        removeAllChildCoordinators()
+        openLoginStateSelectionFlow()
     }
     
 }
@@ -90,6 +107,6 @@ extension ApplicationCoordinator: LoginCoordinatorDelegate {
 extension ApplicationCoordinator: BabyAddCoordinatorDelegate {
     func didFinish(_ babyAddCoordinator: BabyAddCoordinator) {
         remove(childCoordinator: babyAddCoordinator)
-        openAuthenticatedFlow(withUser: User.shared)
+        openAuthenticatedFlow(withUser: User())
     }
 }

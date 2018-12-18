@@ -25,4 +25,7 @@ class HomeScreenViewController: UIViewController {
         delegate?.didTapAddBaby(self)
     }
     
+    @IBAction func buttonLogoutTapped(_ sender: UIButton) {
+        delegate?.didTapLogout(self)
+    }
 }
