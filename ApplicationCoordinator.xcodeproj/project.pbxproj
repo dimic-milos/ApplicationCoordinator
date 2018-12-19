@@ -289,7 +289,7 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		7404E22A21B64B3F00254B68 /* xCodeInitialFiles */ = {
+		7404E22A21B64B3F00254B68 /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				749101AB21AD1423008F6545 /* AppDelegate.swift */,
@@ -299,7 +299,7 @@
 				749101B421AD1425008F6545 /* LaunchScreen.storyboard */,
 				749101B721AD1425008F6545 /* Info.plist */,
 			);
-			path = xCodeInitialFiles;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		7404E22B21B64BCE00254B68 /* Enums */ = {
@@ -371,9 +371,9 @@
 		749101AA21AD1423008F6545 /* ApplicationCoordinator */ = {
 			isa = PBXGroup;
 			children = (
+				7404E22A21B64B3F00254B68 /* Application */,
 				07AC1C7121C775ED002FB6B0 /* Constants */,
 				07AC1C7221C777BC002FB6B0 /* Helpers */,
-				7404E22A21B64B3F00254B68 /* xCodeInitialFiles */,
 				7404E22921B64B1E00254B68 /* Extensions */,
 				7404E22B21B64BCE00254B68 /* Enums */,
 				7404E22C21B64BFC00254B68 /* Models */,
@@ -766,7 +766,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K442TLVK77;
-				INFOPLIST_FILE = "$(SRCROOT)/ApplicationCoordinator/xCodeInitialFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ApplicationCoordinator/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -784,7 +784,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K442TLVK77;
-				INFOPLIST_FILE = "$(SRCROOT)/ApplicationCoordinator/xCodeInitialFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ApplicationCoordinator/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
